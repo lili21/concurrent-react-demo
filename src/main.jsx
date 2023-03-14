@@ -5,7 +5,9 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/root";
 import InputDemo from "./routes/input";
+import InputConcurrent from "./routes/input-concurrent";
 import TabDemo from "./routes/tab";
+import TabConcurrent from "./routes/tab-concurrent";
 
 const router = createBrowserRouter([
   {
@@ -17,8 +19,16 @@ const router = createBrowserRouter([
         element: <InputDemo />,
       },
       {
+        path: "input-concurrent",
+        element: <InputConcurrent />,
+      },
+      {
         path: "tab",
         element: <TabDemo />,
+      },
+      {
+        path: "tab-concurrent",
+        element: <TabConcurrent />,
       },
     ],
   },
