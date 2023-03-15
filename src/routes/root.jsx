@@ -18,6 +18,9 @@ export default function Root() {
             <li>
               <Link to="/tab-concurrent">Tab Concurrent Demo</Link>
             </li>
+            <li>
+              <Link to="/tearing">Tearing</Link>
+            </li>
           </ul>
         </nav>
       </div>

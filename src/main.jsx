@@ -8,6 +8,7 @@ import InputDemo from "./routes/input";
 import InputConcurrent from "./routes/input-concurrent";
 import TabDemo from "./routes/tab";
 import TabConcurrent from "./routes/tab-concurrent";
+import Tearing from "./routes/tearing";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "tab-concurrent",
         element: <TabConcurrent />,
+      },
+      {
+        path: "tearing",
+        element: <Tearing />,
       },
     ],
   },
